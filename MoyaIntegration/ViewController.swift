@@ -39,7 +39,7 @@ class ViewController: UIViewController {
                     print(user.results[1].location)
                     var locationPostcodeString : String = ""
                     user.results.forEach { resultUser in
-                        locationPostcodeString.append("\(String(describing: resultUser.id.value))" + "*-*\n")
+                        locationPostcodeString.append((resultUser.id.value ?? "No Value Available") + "*-*\n")
                         
                     }
                     self.txtViewJson.text = locationPostcodeString

@@ -42,7 +42,7 @@ struct Dob: Codable {
 
 // MARK: - ID
 struct ID: Codable {
-    let name, value: String?
+    let name, value: String!
 }
 
 // MARK: - Location
